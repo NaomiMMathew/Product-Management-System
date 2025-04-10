@@ -1,0 +1,262 @@
+
+/* General styling for the product list */
+.product-list {
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+/* Container for product cards */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Increased spacing between cards for better layout */
+}
+
+/* Styling for individual product cards */
+.product-card {
+    background-color: #ffffff; /* Changed to pure white for cleaner look */
+    border-radius: 15px; /* Slightly rounded corners for modern design */
+    padding: 20px; /* Increased padding for better spacing */
+    width: 260px; /* Slightly wider cards */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
+    transition: transform 0.3s ease; /* Added smooth hover effect */
+}
+
+.product-card:hover {
+    transform: scale(1.05); /* Subtle hover effect for visual interest */
+}
+
+.product-card h3 {
+    margin-top: 0;
+    font-size: 18px; /* Adjusted font size for readability */
+    color: #333333; /* Text color for contrast */
+}
+
+/* Buttons container */
+.card-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px; /* Increased margin for spacing */
+}
+
+/* General button styling */
+.edit-btn,
+.delete-btn {
+    padding: 8px 12px; /* Adjusted padding for better feel */
+    border: none;
+    border-radius: 8px; /* More rounded corners for modern style */
+    cursor: pointer;
+    font-size: 14px; /* Adjusted font size for consistency */
+    transition: transform 0.2s ease, background-color 0.3s ease; /* Added smooth transitions */
+}
+
+.edit-btn {
+    background-color: #4caf50;
+    color: #ffffff;
+}
+
+.edit-btn:hover {
+    background-color: #43a047; /* Darker green hover effect */
+}
+
+.delete-btn {
+    background-color: #f44336;
+    color: #ffffff;
+}
+
+.delete-btn:hover {
+    background-color: #d32f2f; /* Enhanced red hover effect */
+    transform: translateY(-2px); /* Subtle lift effect on hover */
+}
+/* General Form Container */
+.product-form {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Input and Textarea Fields */
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.input-field:focus {
+  border-color: #004080;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 64, 128, 0.5);
+}
+
+/* Buttons */
+.action-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px 0;
+  border: none;
+  border-radius: 4px;
+  background-color: #004080;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.action-btn:hover {
+  background-color: #003060;
+}
+
+.action-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Title */
+h3 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+ 
+.filter-container {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Title */
+  .filter-container h3 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+  }
+  
+  /* Input Fields */
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+  
+  .input-field:focus {
+    border-color: #004080;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 64, 128, 0.5);
+  }
+  
+  /* Button Styles */
+  .action-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 4px;
+    background-color: #004080;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .action-btn:hover {
+    background-color: #003060;
+  }
+  
+  .action-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  /* Container for all cards */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+  }
+  
+  /* Individual product card */
+  .product-card {
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    transition: transform 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Product image */
+  .product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+  }
+  
+  /* Buttons inside the card */
+  .card-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+  
+  .edit-btn,
+  .delete-btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+  }
+  
+  .edit-btn {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .edit-btn:hover {
+    background-color: #45a049;
+  }
+  
+  .delete-btn {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .delete-btn:hover {
+    background-color: #d32f2f;
+  }
+  
+  
+  
